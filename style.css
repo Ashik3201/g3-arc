@@ -50,6 +50,7 @@ nav li a {
     border-radius: 5px;
     border: 0;
     font-size: 1.2rem;
+    cursor: pointer;
 }
 .banner-title{
     font-size: 4rem;
@@ -59,4 +60,33 @@ nav li a {
 .banner-des{
     color: #727272;
     font-weight: 400;
+}
+
+.banner img{
+    width: 100%;
+    margin-top: 20px;
+    
+}
+
+
+/* Responsive  */
+/* Mobike device */
+@media screen and (max-width: 576px ){
+    header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+}
+
+/* I pad or medium device  */
+
+@media screen and (min-width: 576px) and (max-width:960px) {
+    nav{
+        flex-direction: column;
+    }
+    header{
+        padding: 50px;
+    }
 }
