@@ -106,6 +106,56 @@ main{
     font-weight: 700;
 }
 
+
+/* feature section */
+.feature-container{
+    display: flex;
+    margin-top: 130px;
+    gap: 100px;
+}
+
+.feature-content .card{
+    border-radius: 5px;
+    background-color:white;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 30px 0 rgba(0 , 0 , 0 , 0.06);
+}
+.feature-content h4{
+    color: #131313;
+    font-size: 20px;
+}
+
+.feature-content .section-title{
+    border-left: 5px solid orange;
+    padding-left: 24px;
+}
+.feature-image img{
+    height: 80%;
+    margin-left: 80px;
+}
+
+.ten-years-badge{
+    border-radius: 8px;
+    background: #FF900E;
+    color: white;
+    width: 342px;
+    padding: 42px;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+}
+.ten-years-badge h2{
+    font-size: 4rem;
+    margin: 0;
+}
+.ten-years-badge p{
+    font-size: 1.5rem;
+}
+
+
+
+
 /* Some Facts  */
 .facts-card-container .card{
     border-radius: 5px;
@@ -145,8 +195,22 @@ main{
     width: 165px;
 }
 
+footer{
+    text-align: center;
+    background: #FFF4E7;
+    height: 100px;
+    max-width: 1440px;
+    margin: 0 auto;
+    border-radius: 5px;
+    margin-top: 100px;
 
-
+}
+footer p{
+    padding-top: 50px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #424242;
+}
 
 
 
@@ -158,12 +222,20 @@ main{
         padding: 20px;
     }
     nav , .teams-container , .facts-card-container,
-    .sponsor-image-container
+    .sponsor-image-container, .feature-container
     {
         flex-direction: column;
     }
     .teams-image{
         grid-template-columns: 1fr;
+    }
+    .feature-image img{
+        width: 100%;
+        margin-left: 0px;
+    }
+    .ten-years-badge{
+        max-width: 300px;
+        position: static;
     }
     .facts-card-container, .teams-content{
         padding: 0 20px;
@@ -177,7 +249,7 @@ main{
 
 @media screen and (min-width: 576px) and (max-width:960px) {
     nav,.teams-container,
-    .sponsor-image-container
+    .sponsor-image-container, .feature-container
     {
         flex-direction: column;
     }
